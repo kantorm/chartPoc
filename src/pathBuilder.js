@@ -34,7 +34,6 @@ export default (values, width, height) => {
     points.push(previous)
     firstPoint = false
   })
-  console.log(points)
-  return { line: path.lineTo(width, 0).close() }
+  return { line: path.lineTo(width, 0).close(), points }
   // line to the right bottom corner so we could fill the area with color
 }
