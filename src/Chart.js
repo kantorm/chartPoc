@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { Component } from 'react'
+import { StyleSheet, View } from 'react-native'
 
 import Line from './Line'
 
 export default class Chart extends Component {
-
   render() {
     return (
       <View style={styles.container}>
-        <Line values={[40, 30, 70, 60, 100, 70, 40, 70, 50]} />
+        <Line values={[60, 30, 50, 20, 50, 80, 40, 70, 50]} />
       </View>
-    );
+    )
   }
-
 }
 
 const styles = StyleSheet.create({
@@ -20,4 +18,4 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
   },
-});
+})
