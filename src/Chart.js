@@ -7,7 +7,7 @@ export default class Chart extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Line values={[60, 30, 50, 20, 50, 80, 40, 70, 50]} />
+        <Line values={this.props.values} stepX={70} />
       </View>
     )
   }
@@ -15,7 +15,8 @@ export default class Chart extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.7,
     backgroundColor: '#FFFFFF',
+    justifyContent: 'flex-end',
   },
 })

@@ -11,10 +11,9 @@ export default (values, width, height) => {
   // step between each value point on horizontal (x) axis
   const stepX = width / (values.length - 1 || 1)
   // step between each value point on vertical (y) axis
-  const stepY = maxValue ? (height - 70) / maxValue : 0
+  const stepY = maxValue ? height / maxValue : 0
   // adjust values so that min value becomes 0 and goes to the bottom edge
   const adjustedValues = values.map(value => value - minValue)
-
   const path = Path().moveTo(0, 0)
   // start from the left bottom corner so we could fill the area with color
 
